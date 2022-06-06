@@ -1,3 +1,20 @@
 {
-  "products": []
+  "topics": [
+    {
+      "title": "awfawf",
+      "typeOfMovie": "fawfaw",
+      "description": "fawf",
+      "price": "awf",
+      "image": "fawfwaf",
+      "id": 1
+    },
+    {
+      "title": "awfawf",
+      "typeOfMovie": "fawfawf",
+      "description": "awfawf",
+      "price": "awf",
+      "image": "awfawf",
+      "id": 2
+    }
+  ]
 }
