@@ -5,7 +5,7 @@ import "./Navbar.css";
 const Navbar = () => {
   return (
     <div>
-      <nav class="navbar navbar-expand-lg bg-light d-flex justify-content-space-between">
+      <nav class="navbar navbar-expand-lg bg-dark d-flex justify-content-space-between">
         <div class="container-fluid">
           <a class="navbar-brand">
             <div class="panel">
