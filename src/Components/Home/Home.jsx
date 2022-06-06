@@ -6,7 +6,9 @@ const Home = () => {
   return (
     <>
       <div className="container">
-        <video autoPlay width={1200} src={video}></video>
+        <video autoPlay loop muted>
+          <source width={700} src={video} type="video/mp4" />
+        </video>
       </div>
     </>
   );
