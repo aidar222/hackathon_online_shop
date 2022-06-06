@@ -1,6 +1,9 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Navbar.css";
+import like from "../../assets/logo/like.png";
+import trash from "../../assets/logo/trash.png";
+import admin from "../../assets/logo/admin.png";
 
 const Navbar = () => {
   return (
@@ -89,21 +92,21 @@ const Navbar = () => {
               Search
             </button>
           </form>
-          <li class="nav-item">
+          <tr class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">
-              ❤
+              <img className="icon" src={like} alt="" />
             </a>
-          </li>
-          <li class="nav-item">
+          </tr>
+          <tr class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">
-              🧺
+              <img className="icon" src={trash} alt="" />
             </a>
-          </li>
-          <li class="nav-item">
+          </tr>
+          <tr class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">
-              🧛‍♂️
+              <img className="icon" src={admin} alt="" />
             </a>
-          </li>
+          </tr>
         </div>
       </div>
     </nav>
