@@ -1,0 +1,10 @@
+#footer {
+  width: 100%;
+  position: absolute;
+  justify-content: space-between;
+  margin-top: 60%;
+}
+.footer__text {
+  display: flex;
+  justify-content: space-between;
+}
