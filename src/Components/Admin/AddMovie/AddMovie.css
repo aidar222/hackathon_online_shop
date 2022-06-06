@@ -1,4 +1,4 @@
-.addProduct__container {
+/* .addProduct__container {
   background-image: url("../../../assets/photo/cult-cinema.jpeg");
   background-size: cover;
   width: 100%;
@@ -10,7 +10,7 @@
 .inputs_container {
   flex-direction: column !important;
   justify-content: space-between !important;
-}
+
 
 .inputs {
   display: flex;
@@ -65,9 +65,9 @@
 .btnSave {
   background-color: #d9d7e0 !important;
   border: 2px solid #100e19 !important;
-  /* border-radius: 20px !important; */
+  border-radius: 20px !important;
   color: #100e19 !important;
   width: 200px;
   height: 50px;
   margin-top: 40px !important;
-}
+} */
