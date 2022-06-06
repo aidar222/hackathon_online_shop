@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+
+  align-items: center !important;
+  justify-content: center !important;
+  width: 400px;
+  height: 50px;
+  margin-top: 157px !important;
+  /* padding-top:  !important; */
+  /* border-radius: 500px; */
+}
