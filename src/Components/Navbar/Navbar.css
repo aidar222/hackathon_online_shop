@@ -53,3 +53,10 @@
     transform: rotateY(360deg);
   }
 }
+
+.icon {
+  width: 30px;
+}
+nav {
+  text-decoration: none;
+}

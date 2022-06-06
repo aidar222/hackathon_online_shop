@@ -8,3 +8,20 @@
   display: flex;
   justify-content: space-between;
 }
+
+.logo {
+  width: 100px;
+}
+.logo1 {
+  width: 170px;
+}
+
+p {
+  display: flex;
+  align-items: baseline;
+}
+footer {
+  position: absolute;
+  align-items: baseline;
+  justify-content: center;
+}
