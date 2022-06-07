@@ -4,16 +4,19 @@ import TopicContextProvider from "./Context/TopicContext";
 import Footer from "./Components/Footer/Footer";
 import Navbar from "./Components/Navbar/Navbar";
 import MainRoutes from "./MainRoutes";
+import CartContextProvider from "./Context/CartContext";
 
 const App = () => {
   return (
     <div>
       <BrowserRouter>
-        <TopicContextProvider>
-          <Navbar />
-          <Footer />
-          <MainRoutes />
-        </TopicContextProvider>
+        <CartContextProvider>
+          <TopicContextProvider>
+            <Navbar />
+            <Footer />
+            <MainRoutes />
+          </TopicContextProvider>
+        </CartContextProvider>
       </BrowserRouter>
     </div>
   );
