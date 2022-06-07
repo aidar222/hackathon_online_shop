@@ -40,13 +40,13 @@ const TopicContextProvider = ({ children }) => {
   const getTotalTopics = async () => {
     const { data } = await axios.get(API);
     console.log(data, "totaldata");
-    totalPages = Math.ceil(data.length / 3);
+    totalPages = Math.ceil(data.length / 10);
   };
 
   // getTopics - Фуннкция для получения данных из БД db.json и сохранения этих данных в state "topics"
   const getTopics = async () => {
     const { data } = await axios.get(
-      `${API}?_page=${page}&_limit=3&q=${searchValue}`
+      `${API}?_page=${page}&_limit=10&q=${searchValue}`
     );
     dispatch({
       type: "GET_TOPICS",
