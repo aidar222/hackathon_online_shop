@@ -1,10 +1,12 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Navbar.css";
+import search from "../../assets/logo/search.png";
 import like from "../../assets/logo/like.png";
 import trash from "../../assets/logo/trash.png";
 import admin from "../../assets/logo/admin.png";
 import { NavLink } from "react-router-dom";
+import { Button } from "react-bootstrap";
 
 const Navbar = () => {
   return (
@@ -66,21 +68,23 @@ const Navbar = () => {
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">
-                Home
-              </a>
+              {/* <a class="nav-link active" href="#"> */}
+              <NavLink className="nav-link" to="/">
+                <button className="shadowBtn">Home</button>
+              </NavLink>
+              {/* </a> */}
             </li>
             <li class="nav-item">
               {/* <a class="nav-link active" aria-current="page" href="#"> */}
               <NavLink className="nav-link" to="/MovieCard">
-                Movies
+                <button className="shadowBtn"> Movies </button>
               </NavLink>
               {/* </a> */}
             </li>
             <li class="nav-item">
               {/* <a class="nav-link active" aria-current="page" href="#"> */}
               <NavLink className="nav-link" to="/add">
-                Add movie
+                <button className="shadowBtn">Add movie </button>
               </NavLink>
               {/* </a> */}
             </li>
@@ -90,8 +94,9 @@ const Navbar = () => {
             <input
               type="text"
               placeholder="Search Here..."
-              className="Search-input"
+              className="search-input"
             />
+            <img className="searchBtn" src={search} alt="" />
             <a href="#" className="search-btn">
               <i className="fas fa-search"></i>
             </a>
@@ -103,7 +108,9 @@ const Navbar = () => {
           </tr>
           <tr class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">
-              <img className="icon" src={trash} alt="" />
+              <NavLink to="/cart">
+                <img className="icon" src={trash} alt="" />
+              </NavLink>
             </a>
           </tr>
           <tr class="nav-item">
