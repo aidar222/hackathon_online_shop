@@ -9,9 +9,9 @@ const Footer = () => {
   return (
     <div>
       {/* <!-- FOOTER START --> */}
-      <footer id="footer" class="p-5  text-center text-light">
-        <div class="footer__text">
-          <p class="lead text-sm-start">
+      <footer id="footer" className="p-5  text-center text-light">
+        <div className="footer__text">
+          <p className="lead text-sm-start">
             <tr>
               <img className="logo" src={googleLogo} alt="" />
             </tr>
@@ -19,12 +19,14 @@ const Footer = () => {
               <img className="logo1" src={appleLogo} alt="" />
             </tr>
           </p>
-          <p>
+          <p id="oc">
             2022 ONLINE CINEMA
             <br />
-            Made by Aibat & Aidar
+            MOON FILM
+            <br />
+            Plan your end of the week with us
           </p>
-          <p class="lead text-sm-end">LOS ANGELES</p>
+          <p class="lead text-sm-end">Aibat & Aidar</p>
         </div>
       </footer>
       {/* <!-- FOOTER FINISH --> */}

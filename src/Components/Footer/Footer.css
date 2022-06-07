@@ -20,8 +20,8 @@ p {
   display: flex;
   align-items: baseline;
 }
-footer {
-  position: absolute;
+.footer__text {
+  display: flex;
   align-items: baseline;
-  justify-content: center;
+  justify-content: space-around;
 }

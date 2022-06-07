@@ -4,6 +4,7 @@ import "./Navbar.css";
 import like from "../../assets/logo/like.png";
 import trash from "../../assets/logo/trash.png";
 import admin from "../../assets/logo/admin.png";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -70,28 +71,31 @@ const Navbar = () => {
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">
+              {/* <a class="nav-link active" aria-current="page" href="#"> */}
+              <NavLink className="nav-link" to="/MovieCard">
                 Movies
-              </a>
+              </NavLink>
+              {/* </a> */}
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">
+              {/* <a class="nav-link active" aria-current="page" href="#"> */}
+              <NavLink className="nav-link" to="/add">
                 Add movie
-              </a>
+              </NavLink>
+              {/* </a> */}
             </li>
           </ul>
 
-          <form class="d-flex" role="search">
+          <div className="search-box">
             <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
+              type="text"
+              placeholder="Search Here..."
+              className="Search-input"
             />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>
+            <a href="#" className="search-btn">
+              <i className="fas fa-search"></i>
+            </a>
+          </div>
           <tr class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">
               <img className="icon" src={like} alt="" />
