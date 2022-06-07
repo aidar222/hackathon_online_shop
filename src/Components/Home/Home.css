@@ -69,6 +69,7 @@ video {
   opacity: 0;
   color: white;
   font-size: 1.8em;
+  background-color: #100e1900;
   border-radius: 20px;
 
   transition: opacity 400ms, transform 400ms;

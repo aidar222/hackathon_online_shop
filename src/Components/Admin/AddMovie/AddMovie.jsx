@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import { Form, ToastContainer } from "react-bootstrap";
 import { toast } from "react-toastify";
-import { topicsContext } from "../../Context/TopicContext";
+import { topicsContext } from "../../../Context/TopicContext";
 import "./AddMovie.css";
 
 const AddMovie = () => {
