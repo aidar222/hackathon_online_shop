@@ -1,0 +1,23 @@
+.containerMovieDetails {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 5% 20%;
+}
+
+#imgCards {
+  position: absolute;
+  height: 435px;
+  width: 290px;
+  border-radius: 7px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.containerMovieDetailsRight {
+  padding-left: 40%;
+  color: #d9d7e0;
+}
