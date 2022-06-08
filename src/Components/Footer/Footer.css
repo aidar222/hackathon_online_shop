@@ -9,19 +9,29 @@
   justify-content: space-between;
 }
 
-.logo {
-  width: 100px;
-}
-.logo1 {
-  width: 170px;
-}
-
-p {
-  display: flex;
-  align-items: baseline;
-}
 .footer__text {
   display: flex;
   align-items: baseline;
+  justify-content: space-evenly;
+}
+.lead {
+  display: flex;
+
+  display: inline-block;
+  margin-left: 20px;
+}
+.lead1 {
+  display: flex;
+
+  display: inline-block;
   justify-content: space-around;
+}
+
+.logo {
+  margin-left: 20px;
+}
+
+.footer__text {
+  margin-left: -14%;
+  margin-right: -15%;
 }

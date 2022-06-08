@@ -1,6 +1,29 @@
 {
   "topics": [
     {
+<<<<<<< HEAD
+      "title": "avatar",
+      "typeOfMovie": "mult",
+      "description": "11",
+      "price": "11222",
+      "image": "https://media.mustapp.me/must/posters/w342/hbhFnRzzg6ZDmm8YAmxBnQpQIPh.jpg",
+      "id": 1
+    },
+    {
+      "title": "aang",
+      "typeOfMovie": "mult",
+      "description": "11",
+      "price": "11222",
+      "image": "https://media.mustapp.me/must/posters/w342/hbhFnRzzg6ZDmm8YAmxBnQpQIPh.jpg",
+      "id": 2
+    },
+    {
+      "title": "matrix",
+      "typeOfMovie": "mult",
+      "description": "11",
+      "price": "11222",
+      "image": "https://media.mustapp.me/must/posters/w342/hbhFnRzzg6ZDmm8YAmxBnQpQIPh.jpg",
+=======
       "title": "The Shining",
       "typeOfMovie": "Cult Film",
       "description": "Jack Torrance accepts a caretaker job at the Overlook Hotel, where he, along with his wife Wendy and their son Danny, must live isolated from the rest of the world for the winter. But they aren't prepared for the madness that lurks within.",
@@ -22,6 +45,7 @@
       "description": "During the 1980s, a failed stand-up comedian is driven insane and turns to a life of crime and chaos in Gotham City while becoming an infamous psychopathic crime figure.",
       "price": "850 som",
       "image": "https://media.mustapp.me/must/posters/w342/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg",
+>>>>>>> 2b777834113464783f6851dafd44e13ff9a5a3a7
       "id": 3
     },
     {
