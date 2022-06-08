@@ -1,12 +1,24 @@
 #footer {
-  width: 100%;
+  max-width: 80%;
   position: absolute;
+  display: flex;
   justify-content: space-between;
   margin-top: 60%;
+  left: 15%;
+  right: 15%;
+  margin-left: 5%;
+  /* margin-right: 5%; */
+}
+
+footer .footer__text {
+  padding-left: 30%;
+  padding-right: 10%;
 }
 .footer__text {
   display: flex;
   justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .footer__text {

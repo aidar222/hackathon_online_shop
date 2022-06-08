@@ -7,6 +7,7 @@ import appleLogo from "../../assets/logo/appleLogo.png";
 import telegram from "../../assets/logo/telegram.png";
 import instagram from "../../assets/logo/instagram.png";
 import twitter from "../../assets/logo/twitter.png";
+import youtube from "../../assets/logo/youtube.png";
 
 const Footer = () => {
   return (
@@ -18,6 +19,7 @@ const Footer = () => {
             <div className="footer-item-icon">
               <img className="logo" src={googleLogo} alt="" />
               <img className="logo" src={appleLogo} alt="" />
+              <img className="logo" src={youtube} alt="" />
             </div>
           </p>
           <p id="oc">
