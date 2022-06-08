@@ -8,17 +8,17 @@
 }
 
 .container-cards div {
-  height: 275px;
+  height: 270px;
   width: 184px;
-  margin-left: 9px;
-  margin-right: 9px;
+  margin-left: 1.1%;
+  margin-right: 2%;
   margin-top: 50px;
   margin-bottom: 50px;
 }
 
 .movieCards {
   width: 184px;
-  height: 276px;
+  height: 274px;
   position: absolute;
   border-radius: 7px;
   overflow: hidden;
