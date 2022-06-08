@@ -149,5 +149,5 @@ nav {
 
 .shadowBtn:hover::before {
   background: white;
-  top: 70px;
+  top: 50px;
 }

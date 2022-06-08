@@ -28,15 +28,8 @@ footer .footer__text {
 }
 .lead {
   display: flex;
-
   display: inline-block;
-  margin-left: 20px;
-}
-.lead1 {
-  display: flex;
-
-  display: inline-block;
-  justify-content: space-around;
+  margin-left: 25px;
 }
 
 .logo {
