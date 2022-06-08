@@ -2,7 +2,7 @@ import React, { useContext, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Navbar.css";
 import search from "../../assets/logo/search.png";
-import like from "../../assets/logo/like.png";
+import love from "../../assets/logo/love.png";
 import trash from "../../assets/logo/trash.png";
 import admin from "../../assets/logo/admin.png";
 import { NavLink } from "react-router-dom";
@@ -101,6 +101,7 @@ const Navbar = () => {
               value={searchValue}
               placeholder="Search Here..."
               className="search-input"
+              aria-label="name-input"
               onChange={(e) => setSearchValue(e.target.value)}
             />
             <img className="searchBtn" src={search} alt="" />
@@ -110,7 +111,7 @@ const Navbar = () => {
           </div>
           <tr class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">
-              <img className="icon" src={like} alt="" />
+              <img className="icon" src={love} alt="" />
             </a>
           </tr>
           <tr class="nav-item">
