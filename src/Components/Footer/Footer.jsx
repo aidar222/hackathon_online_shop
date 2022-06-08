@@ -4,6 +4,9 @@ import "./Footer.css";
 import { Button } from "react-bootstrap";
 import googleLogo from "../../assets/logo/googleLogo.png";
 import appleLogo from "../../assets/logo/appleLogo.png";
+import telegram from "../../assets/logo/telegram.png";
+import instagram from "../../assets/logo/instagram.png";
+import twitter from "../../assets/logo/twitter.png";
 
 const Footer = () => {
   return (
@@ -11,13 +14,11 @@ const Footer = () => {
       {/* <!-- FOOTER START --> */}
       <footer id="footer" className="p-5  text-center text-light">
         <div className="footer__text">
-          <p className="lead text-sm-start">
-            <tr>
+          <p className="lead1 text-sm-start">
+            <div className="footer-item-icon">
               <img className="logo" src={googleLogo} alt="" />
-            </tr>
-            <tr>
-              <img className="logo1" src={appleLogo} alt="" />
-            </tr>
+              <img className="logo" src={appleLogo} alt="" />
+            </div>
           </p>
           <p id="oc">
             2022 ONLINE CINEMA
@@ -26,7 +27,17 @@ const Footer = () => {
             <br />
             Plan your end of the week with us
           </p>
-          <p class="lead text-sm-end">Aibat & Aidar</p>
+          <div>
+            <p class="lead ">
+              <img src={telegram} alt="" />
+            </p>
+            <p class="lead ">
+              <img src={instagram} alt="" />
+            </p>
+            <p class="lead ">
+              <img src={twitter} alt="" />
+            </p>
+          </div>{" "}
         </div>
       </footer>
       {/* <!-- FOOTER FINISH --> */}

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Navbar.css";
 import search from "../../assets/logo/search.png";
@@ -7,8 +7,13 @@ import trash from "../../assets/logo/trash.png";
 import admin from "../../assets/logo/admin.png";
 import { NavLink } from "react-router-dom";
 import { Button } from "react-bootstrap";
+import { topicsContext } from "../../Context/TopicContext";
 
 const Navbar = () => {
+  const { searchValue, setSearchValue, getTopics } = useContext(topicsContext);
+  useEffect(() => {
+    getTopics();
+  }, [searchValue]);
   return (
     <nav class="navbar navbar-expand-lg  d-flex justify-content-space-between">
       <div class="container-fluid">
@@ -93,8 +98,10 @@ const Navbar = () => {
           <div className="search-box">
             <input
               type="text"
+              value={searchValue}
               placeholder="Search Here..."
               className="search-input"
+              onChange={(e) => setSearchValue(e.target.value)}
             />
             <img className="searchBtn" src={search} alt="" />
             <a href="#" className="search-btn">
