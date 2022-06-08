@@ -16,11 +16,17 @@ const Footer = () => {
       <footer id="footer" className="p-5  text-center text-light">
         <div className="footer__text">
           <p className="lead1 text-sm-start">
-            <div className="footer-item-icon">
-              <img className="logo" src={googleLogo} alt="" />
-              <img className="logo" src={appleLogo} alt="" />
-              <img className="logo" src={youtube} alt="" />
-            </div>
+            <div>
+              <p class="lead ">
+                <img className="logo" src={googleLogo} alt="" />
+              </p>
+              <p class="lead ">
+                <img className="logo" src={appleLogo} alt="" />
+              </p>
+              <p class="lead ">
+                <img className="logo" src={youtube} alt="" />
+              </p>
+            </div>{" "}
           </p>
           <p id="oc">
             2022 ONLINE CINEMA

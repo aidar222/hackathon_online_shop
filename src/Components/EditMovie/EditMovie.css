@@ -1,0 +1,46 @@
+.containerEditFilm {
+  background-image: url("../../assets/photo/cult-cinema.jpeg");
+  background-color: #001731;
+  background-size: cover;
+  width: 100%;
+  height: 740px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.containerTopic {
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #69696900;
+}
+
+.addTopic-btn {
+  margin-left: 282px;
+  border-radius: 10px;
+  background: #d9d7e0;
+  color: #001731;
+  font-weight: 600;
+  width: 140px;
+  height: 40px;
+  margin-top: 20px;
+  border: 2px rgba(44, 130, 253, 0.15) solid;
+}
+
+.addTopic-btn:hover {
+  background-color: #001731;
+  color: #d9d7e0;
+}
+
+.addTopic-inputs {
+  width: 700px;
+  margin-bottom: 13px;
+}
+.addTopic-inputs::placeholder {
+  text-align: center;
+}
+.MovieCardLink {
+  background-color: rgba(250, 235, 215, 0);
+  width: 150px;
+}
