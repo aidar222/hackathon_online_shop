@@ -6,7 +6,7 @@ import Home from "./Components/Home/Home";
 import Movies from "./Components/Movies/Movies";
 import Cart from "./Components/Cart/Cart";
 import MovieDetails from "./Components/MovieDetails/MovieDetails";
-import EditMovie from "./Components/EditMovie/EditMovie";
+import EditMovie from "./Components/Admin/EditMovie/EditMovie";
 
 const MainRoutes = () => {
   return (

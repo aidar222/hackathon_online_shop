@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Button, FormControl, InputGroup } from "react-bootstrap";
 import { NavLink, useParams } from "react-router-dom";
-import { topicsContext } from "../../Context/TopicContext";
+import { topicsContext } from "../../../Context/TopicContext";
 // import "./EditMovie.css";
 
 const EditMovie = () => {

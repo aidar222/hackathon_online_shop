@@ -50,6 +50,7 @@ const AddMovie = () => {
     setPrice("");
     setImage("");
   };
+
   return (
     <div className="addMovie__container">
       <div className="containerAddTopic">
