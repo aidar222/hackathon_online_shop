@@ -1,11 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Button, FormControl, InputGroup } from "react-bootstrap";
 import { NavLink, useParams } from "react-router-dom";
-<<<<<<< HEAD:src/Components/EditMovie/EditMovie.jsx
-import { topicsContext } from "../../Context/TopicContext";
-=======
 import { topicsContext } from "../../../Context/TopicContext";
->>>>>>> 02b4a7d175e63eea270e3d31e4412d031da99cad:src/Components/Admin/EditMovie/EditMovie.jsx
 import "./EditMovie.css";
 
 const EditMovie = () => {
