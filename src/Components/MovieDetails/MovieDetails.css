@@ -11,6 +11,7 @@
   height: 435px;
   width: 290px;
   border-radius: 7px;
+  border: 1px solid #d9d7e0;
   overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
@@ -20,4 +21,14 @@
 .containerMovieDetailsRight {
   padding-left: 40%;
   color: #d9d7e0;
+}
+
+.stars {
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+#cast {
+  width: 429px;
+  height: 151px;
 }

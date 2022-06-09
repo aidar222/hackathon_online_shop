@@ -20,22 +20,39 @@ const MovieDetails = () => {
           <img id="imgCards" src={detailsObj.image} alt="img" />
         </div>
         <div className="containerMovieDetailsRight">
+          <h2 className="moviecDetailsH3">
+            {detailsObj.title}
+            <NavLink to={`/edit/${id}`}>
+              <button className="btnCrud" id="edit">
+                ✎
+              </button>
+            </NavLink>
+            <NavLink to="/movieCard">
+              <button
+                className="btnCrud"
+                id="del"
+                onClick={() => deleteTopic(id)}
+              >
+                🗑
+              </button>
+            </NavLink>
+          </h2>
           <div className="contImg"></div>
-          <h3 className="moviecDetailsH3">{detailsObj.title}</h3>
+          <div className="movieDetailsButtons"></div>
+          <div className="stars">
+            <img src="https://img.icons8.com/external-filled-outline-perfect-kalash/64/undefined/external-Star-basic-filled-outline-perfect-kalash.png" />
+            <img src="https://img.icons8.com/external-filled-outline-perfect-kalash/64/undefined/external-Star-basic-filled-outline-perfect-kalash.png" />
+            <img src="https://img.icons8.com/external-filled-outline-perfect-kalash/64/undefined/external-Star-basic-filled-outline-perfect-kalash.png" />
+            <img src="https://img.icons8.com/external-filled-outline-perfect-kalash/64/undefined/external-Star-basic-filled-outline-perfect-kalash.png" />
+            <img src="https://img.icons8.com/external-filled-outline-perfect-kalash/64/undefined/external-Star-basic-filled-outline-perfect-kalash.png" />
+          </div>
+          <h5>Overview</h5>
           <p className="movieDetailsPT1">{detailsObj.description}</p>
+          <div className="">
+            <h5>Cast and crew</h5>
+            <img id="cast" src={detailsObj.cast} alt="img" />
+          </div>
         </div>
-      </div>
-      <div className="movieDetailsButtons">
-        <NavLink to={`/edit/${id}`}>
-          <button className="btnCrud" id="edit">
-            ✎
-          </button>
-        </NavLink>
-        <NavLink to="/movieCard">
-          <button className="btnCrud" id="del" onClick={() => deleteTopic(id)}>
-            🗑
-          </button>
-        </NavLink>
       </div>
     </>
   );
