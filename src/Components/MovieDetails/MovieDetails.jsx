@@ -1,6 +1,8 @@
 import React, { useContext, useEffect } from "react";
 import { NavLink, useParams } from "react-router-dom";
 import { topicsContext } from "../../Context/TopicContext";
+import love from "../../assets/logo/love.png";
+import trash from "../../assets/logo/trash.png";
 import "./MovieDetails.css";
 
 const MovieDetails = () => {
@@ -24,7 +26,7 @@ const MovieDetails = () => {
             {detailsObj.title}
             <NavLink to={`/edit/${id}`}>
               <button className="btnCrud" id="edit">
-                ✎
+                <img src="https://img.icons8.com/avantgarde/100/undefined/experimental-edit-avantgarde.png" />
               </button>
             </NavLink>
             <NavLink to="/movieCard">
@@ -33,7 +35,7 @@ const MovieDetails = () => {
                 id="del"
                 onClick={() => deleteTopic(id)}
               >
-                🗑
+                <img src="https://img.icons8.com/external-kiranshastry-lineal-color-kiranshastry/64/undefined/external-trash-interface-kiranshastry-lineal-color-kiranshastry.png" />
               </button>
             </NavLink>
           </h2>
@@ -53,6 +55,20 @@ const MovieDetails = () => {
             <img id="cast" src={detailsObj.cast} alt="img" />
           </div>
         </div>
+      </div>
+      <div className="btnFav">
+        <NavLink to="/favorites">
+          <button id="heart">
+            <img className="icon" src={love} alt="" />
+          </button>
+        </NavLink>
+      </div>
+      <div className="btnCart">
+        <NavLink to="/cart">
+          <button id="heart">
+            <img className="icon" src={trash} alt="" />
+          </button>
+        </NavLink>
       </div>
     </>
   );
