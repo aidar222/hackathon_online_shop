@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { Button, FormControl, InputGroup } from "react-bootstrap";
 import { NavLink, useParams } from "react-router-dom";
 import { topicsContext } from "../../Context/TopicContext";
-// import "./EditMovie.css";
+import "./EditMovie.css";
 
 const EditMovie = () => {
   const { getTopicDetails, detailsObj, editTopicFunc } =
@@ -72,11 +72,13 @@ const EditMovie = () => {
             aria-describedby="basic-addon1"
           />
         </InputGroup>
-        <NavLink className="MovieCardLink" to="/MovieCard">
-          <Button onClick={handleClick} className="addTopic-btn">
-            Изменить
-          </Button>
-        </NavLink>
+        <div className="btnEdit">
+          <NavLink to="/Movies">
+            <button id="edit" onClick={handleClick}>
+              Change
+            </button>
+          </NavLink>
+        </div>
       </div>
     </div>
   );

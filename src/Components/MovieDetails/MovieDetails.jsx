@@ -4,12 +4,15 @@ import { topicsContext } from "../../Context/TopicContext";
 import love from "../../assets/logo/love.png";
 import trash from "../../assets/logo/trash.png";
 import "./MovieDetails.css";
+import { cartContext } from "../../Context/CartContext";
 
 const MovieDetails = () => {
   const { id } = useParams();
 
   const { getTopicDetails, detailsObj, deleteTopic } =
     useContext(topicsContext);
+
+  const { addProductToCart } = useContext(cartContext);
 
   useEffect(() => {
     getTopicDetails(id);
@@ -65,7 +68,7 @@ const MovieDetails = () => {
       </div>
       <div className="btnCart">
         <NavLink to="/cart">
-          <button id="heart">
+          <button id="heart" onClick={() => addProductToCart()}>
             <img className="icon" src={trash} alt="" />
           </button>
         </NavLink>
