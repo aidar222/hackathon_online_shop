@@ -7,10 +7,10 @@ import Movies from "./Components/Movies/Movies";
 import Cart from "./Components/Cart/Cart";
 import MovieDetails from "./Components/MovieDetails/MovieDetails";
 import EditMovie from "./Components/Admin/EditMovie/EditMovie";
-import Anime from "./Components/Anime/Anime";
-import Favourite from "./Components/Favourites/Favourite";
 import Error from "./Components/NotWorking/Error";
 import Auth from "./Components/NotWorking/Auth";
+import Anime from "./Components/Anime/Anime";
+import Favourite from "./Components/Favourites/Favourite";
 
 const MainRoutes = () => {
   return (

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 
 import video from "../../assets/video/TheMostBeautifulShotsInMovieHistory.mp4";
 
@@ -7,9 +7,11 @@ import imgAnime from "../../assets/image/imgAnime.png";
 import artist from "../../assets/image/artist.png";
 import lionKing from "../../assets/image/lionKing.jpg";
 import marvel from "../../assets/image/marvel.jpg";
-import { NavLink } from "react-router-dom";
+import { NavLink, useSearchParams } from "react-router-dom";
+import { topicsContext } from "../../Context/TopicContext";
 
 const Home = () => {
+  const { setTypeOfMovie } = useContext(topicsContext);
   return (
     <>
       <div className="container">
@@ -22,12 +24,16 @@ const Home = () => {
             <img className="image" src={artist} alt="" />
             <p className="text">Cult Movies</p>
           </a>
-          <NavLink className="Animeee" to={"/Anime"}>
-            <a id="cardId" className="cardImage">
-              <img className="image" src={imgAnime} alt="" />
-              <p className="text">Anime</p>
-            </a>
-          </NavLink>
+          {/* <NavLink className="Animeee" to={"/Anime"}> */}
+          <a
+            id="cardId"
+            className="cardImage"
+            onClick={() => setTypeOfMovie("Anime")}
+          >
+            <img className="image" src={imgAnime} alt="" />
+            <p className="text">Anime</p>
+          </a>
+          {/* </NavLink> */}
           <a className="cardImage">
             <img className="image" src={lionKing} alt="" />
             <p className="text">Animation</p>
