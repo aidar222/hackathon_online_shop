@@ -74,7 +74,7 @@
     },
     {
       "title": "Spirited Away",
-      "typeOfMovie": "Anime",
+      "typeOfMovieAnime": "Anime",
       "description": "A young girl, Chihiro, becomes trapped in a strange new world of spirits. When her parents undergo a mysterious transformation, she must call upon the courage she never knew she had to free her family.",
       "price": "850 som",
       "image": "\thttps://media.mustapp.me/must/posters/w342/39wmItIWsg5sZMyRUHLkWBcuVCM.jpg",
@@ -539,14 +539,6 @@
       "image": "https://media.mustapp.me/must/posters/w342/qG3RYlIVpTYclR9TYIsy8p7m7AT.jpg",
       "cast": "https://i.mycdn.me/i?r=AyH4iRPQ2q0otWIFepML2LxRLbq23GEVjAuwMU8_5Uw0Pg&dpr=2",
       "id": 60
-    },
-    {
-      "title": "aibat",
-      "typeOfMovie": "awfaw",
-      "description": "fawfaw",
-      "price": "awfawf",
-      "image": "fwafaw",
-      "id": 61
     }
   ]
 }

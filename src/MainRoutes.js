@@ -7,7 +7,8 @@ import Movies from "./Components/Movies/Movies";
 import Cart from "./Components/Cart/Cart";
 import MovieDetails from "./Components/MovieDetails/MovieDetails";
 import EditMovie from "./Components/Admin/EditMovie/EditMovie";
-import Anime from "./Components/Filter/Anime";
+import Error from "./Components/NotWorking/Error";
+import Auth from "./Components/NotWorking/Auth";
 
 const MainRoutes = () => {
   return (
@@ -18,7 +19,8 @@ const MainRoutes = () => {
       <Route path="/cart" element={<Cart />} />
       <Route path="/edit/:id" element={<EditMovie />} />
       <Route path="/details/:id" element={<MovieDetails />} />
-      <Route path="/anime" element={<Anime />} />
+      <Route path="/error" element={<Error />} />
+      <Route path="/us" element={<Auth />} />
     </Routes>
   );
 };

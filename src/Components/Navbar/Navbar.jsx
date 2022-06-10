@@ -111,7 +111,9 @@ const Navbar = () => {
           </div>
           <tr class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">
-              <img className="icon" src={love} alt="" />
+              <NavLink to="/error">
+                <img className="icon" src={love} alt="" />
+              </NavLink>
             </a>
           </tr>
           <tr class="nav-item">
@@ -123,7 +125,9 @@ const Navbar = () => {
           </tr>
           <tr class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">
-              <img className="icon" src={admin} alt="" />
+              <NavLink to="/us">
+                <img className="icon" src={admin} alt="" />
+              </NavLink>
             </a>
           </tr>
         </div>
