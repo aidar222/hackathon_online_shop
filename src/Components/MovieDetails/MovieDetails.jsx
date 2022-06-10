@@ -5,6 +5,7 @@ import love from "../../assets/logo/love.png";
 import trash from "../../assets/logo/trash.png";
 import "./MovieDetails.css";
 import { cartContext } from "../../Context/CartContext";
+import { favouriteContext } from "../../Context/FavouriteContext";
 import { Button } from "@mui/material";
 
 const MovieDetails = () => {
@@ -13,7 +14,7 @@ const MovieDetails = () => {
   const { getTopicDetails, detailsObj, deleteTopic } =
     useContext(topicsContext);
 
-  const { addProductToCart } = useContext(cartContext);
+  const { addProductToCart } = useContext(cartContext, favouriteContext);
 
   useEffect(() => {
     getTopicDetails(id);
@@ -61,7 +62,7 @@ const MovieDetails = () => {
         </div>
       </div>
       <div className="btnFav">
-        <NavLink to="/favorites">
+        <NavLink to="/favorite">
           <button id="heart">
             <img className="icon" src={love} alt="" />
           </button>

@@ -1,5 +1,7 @@
 import React from "react";
+
 import video from "../../assets/video/TheMostBeautifulShotsInMovieHistory.mp4";
+
 import "./Home.css";
 import imgAnime from "../../assets/image/imgAnime.png";
 import artist from "../../assets/image/artist.png";
