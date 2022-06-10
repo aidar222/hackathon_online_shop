@@ -9,6 +9,8 @@ import MovieDetails from "./Components/MovieDetails/MovieDetails";
 import EditMovie from "./Components/Admin/EditMovie/EditMovie";
 import Anime from "./Components/Anime/Anime";
 import Favourite from "./Components/Favourites/Favourite";
+import Error from "./Components/NotWorking/Error";
+import Auth from "./Components/NotWorking/Auth";
 
 const MainRoutes = () => {
   return (
@@ -21,6 +23,8 @@ const MainRoutes = () => {
       <Route path="/favourite" element={<Favourite />} />
       <Route path="/edit/:id" element={<EditMovie />} />
       <Route path="/details/:id" element={<MovieDetails />} />
+      <Route path="/error" element={<Error />} />
+      <Route path="/us" element={<Auth />} />
     </Routes>
   );
 };
