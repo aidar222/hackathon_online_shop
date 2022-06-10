@@ -21,11 +21,7 @@ const Anime = () => {
           <div key={item.id}>
             <Card className="movieCards">
               <NavLink to={`/details/${item.id}`}>
-                <Card.Img
-                  variant="top"
-                  src={item.image}
-                  alt={item.typeOfMovieAnime}
-                />
+                <Card.Img variant="top" src={item.image} alt={item.type} />
               </NavLink>
             </Card>
           </div>
