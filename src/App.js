@@ -5,7 +5,6 @@ import Footer from "./Components/Footer/Footer";
 import Navbar from "./Components/Navbar/Navbar";
 import MainRoutes from "./MainRoutes";
 import CartContextProvider from "./Context/CartContext";
-import AnimeContextProvider from "./Context/AnimeContext";
 import FavouriteContextProvider from "./Context/FavouriteContext";
 
 const App = () => {
@@ -17,13 +16,11 @@ const App = () => {
       <BrowserRouter>
         <CartContextProvider>
           <FavouriteContextProvider>
-            <AnimeContextProvider>
-              <TopicContextProvider>
-                <Navbar />
-                <Footer />
-                <MainRoutes />
-              </TopicContextProvider>
-            </AnimeContextProvider>
+            <TopicContextProvider>
+              <Navbar />
+              <Footer />
+              <MainRoutes />
+            </TopicContextProvider>
           </FavouriteContextProvider>
         </CartContextProvider>
       </BrowserRouter>

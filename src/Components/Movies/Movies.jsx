@@ -24,7 +24,7 @@ const Movies = () => {
   return (
     <>
       <div className="container-cards">
-        {filteresArr.map((item) => (
+        {topicsArr.map((item) => (
           <div key={item.id}>
             <Card className="movieCards">
               <NavLink to={`/details/${item.id}`}>

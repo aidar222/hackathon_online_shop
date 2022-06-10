@@ -100,7 +100,7 @@ const TopicContextProvider = ({ children }) => {
       type: "SET_TYPE_OF_MOVIE",
       payload: type,
     });
-    navigate("/MovieCard");
+    navigate("/filtered");
   };
 
   console.log(state.typeOfMovie, "type inside Context");
