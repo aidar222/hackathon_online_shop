@@ -1,0 +1,47 @@
+.container-cards {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  min-height: 500px;
+}
+
+.container-cards div {
+  height: 270px;
+  width: 184px;
+  margin-left: 1.1%;
+  margin-right: 2%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.movieCards {
+  width: 184px;
+  height: 274px;
+  position: absolute;
+  border-radius: 7px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: 0.8s;
+  margin-left: -18px;
+}
+
+.movieCards:hover {
+  transform: scale(1.04);
+}
+
+.topicListBtn {
+  border: #d9d7e0;
+}
+
+.btn-container {
+  margin-top: 25px;
+  margin-left: 47.5%;
+}
+
+img {
+  width: 40px;
+}
