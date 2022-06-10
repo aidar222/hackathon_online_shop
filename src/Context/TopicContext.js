@@ -55,6 +55,16 @@ const TopicContextProvider = ({ children }) => {
     getTotalTopics();
   };
 
+  const getAnime = async () => {
+    const { data } = await axios.get(
+      `${API}?_page=${page}&_limit=10&q=${searchValue}`
+    );
+    dispatch({
+      type: "GET_TOPICS",
+      payload: data,
+    });
+    getTotalTopics();
+  };
   // getTopicDetails - функция которя стягивает данные из общего массива "topics" внутри БД db.json. Стягивает только один объект, на который мы нажимаем
 
   const getTopicDetails = async (id) => {
@@ -93,10 +103,12 @@ const TopicContextProvider = ({ children }) => {
   return (
     <topicsContext.Provider
       value={{
+        animeArr: state.topics,
         topicsArr: state.topics,
         detailsObj: state.topicDetails,
         addTopics,
         getTopics,
+        getAnime,
         getTopicDetails,
         deleteTopic,
         editTopicFunc,

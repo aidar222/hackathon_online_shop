@@ -2,7 +2,7 @@
   "topics": [
     {
       "title": "The Shining",
-      "typeOfMovie": "Cult Film",
+      "typeOfMovie1": "Cult Film",
       "description": "Jack Torrance accepts a caretaker job at the Overlook Hotel, where he, along with his wife Wendy and their son Danny, must live isolated from the rest of the world for the winter. But they aren't prepared for the madness that lurks within.",
       "price": "860 som",
       "image": "\thttps://media.mustapp.me/must/posters/w342/b6ko0IKC8MdYBBPkkA1aBPLe2yz.jpg",
@@ -11,7 +11,7 @@
     },
     {
       "title": "Beshkempir",
-      "typeOfMovie": "Cult Film",
+      "typeOfMovie1": "Cult Film",
       "description": "In a Kyrgyz village, five older women adopt an infant foundling. Jump ahead about 12 years: the boy, Beshkempir, is entering puberty, the age, his granny says, when life goes berserk. He plays with friends, horsing around, sniggering about sex, going to an outdoor movie.",
       "price": "850 som",
       "image": "https://media.mustapp.me/must/posters/w342/mzZaaU55vXVm1ddUsiFMmrUUEOu.jpg",
@@ -20,7 +20,7 @@
     },
     {
       "title": "Joker",
-      "typeOfMovie": " Superhero Film",
+      "typeOfMovie1": " Superhero Film",
       "description": "During the 1980s, a failed stand-up comedian is driven insane and turns to a life of crime and chaos in Gotham City while becoming an infamous psychopathic crime figure.",
       "price": "850 som",
       "image": "https://media.mustapp.me/must/posters/w342/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg",
