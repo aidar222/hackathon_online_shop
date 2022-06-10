@@ -8,17 +8,23 @@ import arrowRight from "../../assets/logo/arrow.png";
 import arrowLeft from "../../assets/logo/arrow1.png";
 
 const Movies = () => {
-  const { topicsArr, getTopics, prevPage, nextPage } =
+  const { topicsArr, getTopics, prevPage, nextPage, typeOfMovie } =
     useContext(topicsContext);
 
   useEffect(() => {
     getTopics();
   }, []);
 
+  const filteresArr = topicsArr.filter(
+    (elem) => elem.typeOfMovie === typeOfMovie
+  );
+  console.log(filteresArr, "filteredArr");
+  console.log(topicsArr, "topics arr in Movies");
+
   return (
     <>
       <div className="container-cards">
-        {topicsArr.map((item) => (
+        {filteresArr.map((item) => (
           <div key={item.id}>
             <Card className="movieCards">
               <NavLink to={`/details/${item.id}`}>

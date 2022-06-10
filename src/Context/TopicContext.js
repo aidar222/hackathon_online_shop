@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { createContext, useReducer, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export const topicsContext = createContext();
 
@@ -9,6 +10,7 @@ let totalPages;
 const INIT_STATE = {
   topics: [],
   topicDetails: {},
+  typeOfMovie: "",
 };
 
 const reducer = (prevState = INIT_STATE, action) => {
@@ -17,6 +19,8 @@ const reducer = (prevState = INIT_STATE, action) => {
       return { ...prevState, topics: action.payload };
     case "GET_TOPIC_DETAILS":
       return { ...prevState, topicDetails: action.payload };
+    case "SET_TYPE_OF_MOVIE":
+      return { ...prevState, typeOfMovie: action.payload };
     default:
       return prevState;
   }
@@ -30,6 +34,7 @@ const TopicContextProvider = ({ children }) => {
   // хук useReducer - принимает 2 аргумента: функцию reducer и начальное состояние. Затем хук возвращает массив из 2 элементов: текущее состояние и функцию dispatch. Dispatch (принимает в аргументы action) - функция, которая отправляет объект "action" для изменения состояния.
   const [state, dispatch] = useReducer(reducer, INIT_STATE);
   const [searchValue, setSearchValue] = useState("");
+  const navigate = useNavigate();
   console.log(state);
 
   // addTopics - функция для добавления топиков в базу данных db.json
@@ -90,11 +95,22 @@ const TopicContextProvider = ({ children }) => {
     getTopics();
   };
 
+  const setTypeOfMovie = async (type) => {
+    dispatch({
+      type: "SET_TYPE_OF_MOVIE",
+      payload: type,
+    });
+    navigate("/MovieCard");
+  };
+
+  console.log(state.typeOfMovie, "type inside Context");
+
   return (
     <topicsContext.Provider
       value={{
         topicsArr: state.topics,
         detailsObj: state.topicDetails,
+        typeOfMovie: state.typeOfMovie,
         addTopics,
         getTopics,
         getTopicDetails,
@@ -104,6 +120,7 @@ const TopicContextProvider = ({ children }) => {
         nextPage,
         searchValue,
         setSearchValue,
+        setTypeOfMovie,
       }}
     >
       {children}
