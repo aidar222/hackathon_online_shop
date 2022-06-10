@@ -20,7 +20,7 @@ const Home = () => {
         </video>
         {/* // cards movie */}
         <div className="cards">
-          <a className="cardImage">
+          <a className="cardImage" onClick={() => setTypeOfMovie("Cult Film")}>
             <img className="image" src={artist} alt="" />
             <p className="text">Cult Movies</p>
           </a>
@@ -34,11 +34,14 @@ const Home = () => {
             <p className="text">Anime</p>
           </a>
           {/* </NavLink> */}
-          <a className="cardImage">
+          <a className="cardImage" onClick={() => setTypeOfMovie("Animation")}>
             <img className="image" src={lionKing} alt="" />
             <p className="text">Animation</p>
           </a>
-          <a className="cardImage">
+          <a
+            className="cardImage"
+            onClick={() => setTypeOfMovie("Superhero Film")}
+          >
             <img className="image" src={marvel} alt="" />
             <p className="text">Superhero</p>
           </a>

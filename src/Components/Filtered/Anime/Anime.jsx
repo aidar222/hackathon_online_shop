@@ -1,23 +1,30 @@
 import React, { useContext, useEffect } from "react";
-import { TopicContext } from "../../Context/TopicContext";
+import { TopicContext } from "../../../Context/TopicContext";
 import { Button, ButtonGroup, Card } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import "./Anime.css";
-import arrowRight from "../../assets/logo/arrow.png";
-import arrowLeft from "../../assets/logo/arrow1.png";
-import { animeContext } from "../../Context/AnimeContext";
+import { topicsContext } from "../../../Context/TopicContext";
+import arrowRight from "../../../assets/logo/arrow.png";
+import arrowLeft from "../../../assets/logo/arrow1.png";
 
 const Anime = () => {
-  const { animeArr, getAnime, prevPage, nextPage } = useContext(animeContext);
+  const { topicsArr, getTopics, prevPage, nextPage, typeOfMovie } =
+    useContext(topicsContext);
 
   useEffect(() => {
-    getAnime();
+    getTopics();
   }, []);
+
+  const filteresArr = topicsArr.filter(
+    (elem) => elem.typeOfMovie === typeOfMovie
+  );
+  console.log(filteresArr, "filteredArr");
+  console.log(topicsArr, "topics arr in Movies");
 
   return (
     <>
       <div className="container-cards">
-        {animeArr.map((item) => (
+        {filteresArr.map((item) => (
           <div key={item.id}>
             <Card className="movieCards">
               <NavLink to={`/details/${item.id}`}>
