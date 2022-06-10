@@ -6,6 +6,7 @@ import Navbar from "./Components/Navbar/Navbar";
 import MainRoutes from "./MainRoutes";
 import CartContextProvider from "./Context/CartContext";
 import AnimeContextProvider from "./Context/AnimeContext";
+import FavouriteContextProvider from "./Context/FavouriteContext";
 
 const App = () => {
   useEffect(() => {
@@ -15,13 +16,15 @@ const App = () => {
     <div>
       <BrowserRouter>
         <CartContextProvider>
-          <TopicContextProvider>
+          <FavouriteContextProvider>
             <AnimeContextProvider>
-              <Navbar />
-              <Footer />
-              <MainRoutes />
+              <TopicContextProvider>
+                <Navbar />
+                <Footer />
+                <MainRoutes />
+              </TopicContextProvider>
             </AnimeContextProvider>
-          </TopicContextProvider>
+          </FavouriteContextProvider>
         </CartContextProvider>
       </BrowserRouter>
     </div>

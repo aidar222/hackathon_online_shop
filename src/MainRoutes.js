@@ -8,6 +8,7 @@ import Cart from "./Components/Cart/Cart";
 import MovieDetails from "./Components/MovieDetails/MovieDetails";
 import EditMovie from "./Components/Admin/EditMovie/EditMovie";
 import Anime from "./Components/Anime/Anime";
+import Favourite from "./Components/Favourites/Favourite";
 
 const MainRoutes = () => {
   return (
@@ -17,6 +18,7 @@ const MainRoutes = () => {
       <Route path="/MovieCard" element={<Movies />} />
       <Route path="/Anime" element={<Anime />} />
       <Route path="/cart" element={<Cart />} />
+      <Route path="/favourite" element={<Favourite />} />
       <Route path="/edit/:id" element={<EditMovie />} />
       <Route path="/details/:id" element={<MovieDetails />} />
     </Routes>
