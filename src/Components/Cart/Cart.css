@@ -1,0 +1,36 @@
+* {
+  color: #d9d7e0;
+}
+
+.cart td {
+  padding: 10px 50px;
+  border-bottom: 1px solid gray;
+}
+
+.cart img {
+  width: 50px;
+}
+
+.btnDelete {
+  margin-left: 282px;
+  border-radius: 10px;
+  background: #d9d7e0;
+  color: #001731;
+  font-weight: 600;
+  width: 140px;
+  height: 40px;
+  margin-top: 20px;
+  border: 2px rgba(44, 130, 253, 0.15) solid;
+}
+
+.btnPay {
+  margin-left: 40%;
+  border-radius: 10px;
+  background: #d9d7e0;
+  color: #001731;
+  font-weight: 600;
+  width: 140px;
+  height: 40px;
+  margin-top: 20px;
+  border: 2px rgba(44, 130, 253, 0.15) solid;
+}

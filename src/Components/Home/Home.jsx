@@ -37,7 +37,6 @@ const Home = () => {
             <p className="text">Superhero</p>
           </a>
         </div>
-        ;
       </div>
     </>
   );

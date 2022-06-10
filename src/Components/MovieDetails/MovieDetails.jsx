@@ -62,7 +62,15 @@ const MovieDetails = () => {
         </div>
       </div>
       <div className="btnFav">
+<<<<<<< HEAD
+<<<<<<< HEAD
         <NavLink to="/error">
+=======
+        <NavLink to="/favorite">
+>>>>>>> 0bc892446b02fb0938564e1bec4b8d1e3090efad
+=======
+        <NavLink to="/error">
+>>>>>>> 172ad4a5349041f6297fe05a02878d65ccec998e
           <button id="heart">
             <img className="icon" src={love} alt="" />
           </button>

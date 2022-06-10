@@ -7,10 +7,18 @@ import Movies from "./Components/Movies/Movies";
 import Cart from "./Components/Cart/Cart";
 import MovieDetails from "./Components/MovieDetails/MovieDetails";
 import EditMovie from "./Components/Admin/EditMovie/EditMovie";
-import Anime from "./Components/Anime/Anime";
-import Favourite from "./Components/Favourites/Favourite";
+<<<<<<< HEAD
 import Error from "./Components/NotWorking/Error";
 import Auth from "./Components/NotWorking/Auth";
+=======
+import Anime from "./Components/Anime/Anime";
+import Favourite from "./Components/Favourites/Favourite";
+<<<<<<< HEAD
+>>>>>>> 0bc892446b02fb0938564e1bec4b8d1e3090efad
+=======
+import Error from "./Components/NotWorking/Error";
+import Auth from "./Components/NotWorking/Auth";
+>>>>>>> 172ad4a5349041f6297fe05a02878d65ccec998e
 
 const MainRoutes = () => {
   return (
@@ -18,7 +26,6 @@ const MainRoutes = () => {
       <Route path="/" element={<Home />} />
       <Route path="/add" element={<AddMovie />} />
       <Route path="/MovieCard" element={<Movies />} />
-      <Route path="/Anime" element={<Anime />} />
       <Route path="/cart" element={<Cart />} />
       <Route path="/favourite" element={<Favourite />} />
       <Route path="/edit/:id" element={<EditMovie />} />

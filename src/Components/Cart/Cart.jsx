@@ -23,30 +23,22 @@ const Cart = () => {
                 <th>Фото</th>
                 <th>Название</th>
                 <th>Цена</th>
-                <th>Количество</th>
-                <th>Сумма продукта</th>
               </tr>
             </thead>
             <tbody>
               {cart.products.map((elem) => (
                 <tr key={elem.item.id}>
                   <td>
-                    <img src={elem.item.img1} alt="product img" />
+                    <img src={elem.item.image} alt="product img" />
                   </td>
                   <td>{elem.item.title}</td>
                   <td>{elem.item.price}</td>
-                  <td>
-                    <input
-                      value={elem.count}
-                      type="number"
-                      onChange={(e) =>
-                        changeProductCount(elem.item.id, e.target.value)
-                      }
-                    />
-                  </td>
                   <td>{elem.subPrice}</td>
                   <td>
-                    <button onClick={() => deleteCartProduct(elem.item.id)}>
+                    <button
+                      className="btnDelete"
+                      onClick={() => deleteCartProduct(elem.item.id)}
+                    >
                       Удалить
                     </button>
                   </td>
@@ -54,10 +46,9 @@ const Cart = () => {
               ))}
             </tbody>
           </table>
-          <h4>Общая сумма: {cart.totalPrice}</h4>
 
-          <NavLink to="/payment">
-            <Button>Оформить заказ</Button>
+          <NavLink to="/error">
+            <button className="btnPay">Купить</button>
           </NavLink>
         </div>
       ) : (
@@ -68,6 +59,51 @@ const Cart = () => {
 };
 
 export default Cart;
+// const Cart = () => {
+//   const { cart, getCart, deleteCartProduct, changeProductCount } =
+//     useContext(cartContext);
+
+//   useEffect(() => {
+//     getCart();
+//   }, []);
+
+//   return (
+//     <div className="cart">
+//       {cart.products ? (
+//         <div>
+//           <table>
+//             <tbody>
+//               {cart.products.map((elem) => (
+//                 <tr key={elem.item.id}>
+//                   <td>
+//                     <img src={elem.item.image} alt="product img" />
+//                   </td>
+//                   <td className="tdCart">{elem.item.title}</td>
+//                   <td className="tdCart">{elem.item.price}</td>
+//                   <td className="tdCart">{elem.subPrice}</td>
+//                   <td>
+//                     <button onClick={() => deleteCartProduct(elem.item.id)}>
+//                       Удалить
+//                     </button>
+//                   </td>
+//                 </tr>
+//               ))}
+//             </tbody>
+//           </table>
+//           <h4>Общая сумма: {cart.totalPrice}</h4>
+
+//           <NavLink to="/payment">
+//             <Button>Оформить заказ</Button>
+//           </NavLink>
+//         </div>
+//       ) : (
+//         <h2>Loading...</h2>
+//       )}
+//     </div>
+//   );
+// };
+
+// export default Cart;
 
 // Newwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
 
