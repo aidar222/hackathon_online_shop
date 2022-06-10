@@ -5,6 +5,7 @@ import imgAnime from "../../assets/image/imgAnime.png";
 import artist from "../../assets/image/artist.png";
 import lionKing from "../../assets/image/lionKing.jpg";
 import marvel from "../../assets/image/marvel.jpg";
+import { NavLink } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -19,10 +20,12 @@ const Home = () => {
             <img className="image" src={artist} alt="" />
             <p className="text">Cult Movies</p>
           </a>
-          <a id="cardId" className="cardImage">
-            <img className="image" src={imgAnime} alt="" />
-            <p className="text">Anime</p>
-          </a>
+          <NavLink className="Animeee" to={"/Anime"}>
+            <a id="cardId" className="cardImage">
+              <img className="image" src={imgAnime} alt="" />
+              <p className="text">Anime</p>
+            </a>
+          </NavLink>
           <a className="cardImage">
             <img className="image" src={lionKing} alt="" />
             <p className="text">Animation</p>

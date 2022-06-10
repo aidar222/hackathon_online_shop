@@ -5,6 +5,7 @@ import love from "../../assets/logo/love.png";
 import trash from "../../assets/logo/trash.png";
 import "./MovieDetails.css";
 import { cartContext } from "../../Context/CartContext";
+import { Button } from "@mui/material";
 
 const MovieDetails = () => {
   const { id } = useParams();
@@ -68,7 +69,7 @@ const MovieDetails = () => {
       </div>
       <div className="btnCart">
         <NavLink to="/cart">
-          <button id="heart" onClick={() => addProductToCart()}>
+          <button id="heart" onClick={(e) => addProductToCart(detailsObj)}>
             <img className="icon" src={trash} alt="" />
           </button>
         </NavLink>
